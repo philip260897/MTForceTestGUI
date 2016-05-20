@@ -79,9 +79,12 @@ public class MainWindow {
 		
 		try {
 			//Bilder Laden fuer GUI (Bottom Layer, Top Layer, Extern Platine)
-			imageBottom = ImageIO.read(new File("C:\\Users\\Philip\\Desktop\\Diplomarbeit_Protokoll\\top2.png"));
-			imageTop = ImageIO.read(new File("C:\\Users\\Philip\\Desktop\\Diplomarbeit_Protokoll\\bottom2.png"));
-			imageExtern = ImageIO.read(new File("C:\\Users\\Philip\\Desktop\\Diplomarbeit_Protokoll\\extern3.png"));
+			imageBottom = ImageIO.read(MainWindow.class.getResourceAsStream("top2.png"));
+			imageTop = ImageIO.read(MainWindow.class.getResourceAsStream("bottom2.png"));
+			imageExtern = ImageIO.read(MainWindow.class.getResourceAsStream("extern3.png"));
+			//imageBottom = ImageIO.read(new File("C:\\Users\\Philip\\Desktop\\Diplomarbeit_Protokoll\\top2.png"));
+			//imageTop = ImageIO.read(new File("C:\\Users\\Philip\\Desktop\\Diplomarbeit_Protokoll\\bottom2.png"));
+			//imageExtern = ImageIO.read(new File("C:\\Users\\Philip\\Desktop\\Diplomarbeit_Protokoll\\extern3.png"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
