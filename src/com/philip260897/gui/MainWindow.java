@@ -231,10 +231,10 @@ public class MainWindow {
 		
 		sensorRects.add(adcRect);
 		sensorRects.add(dof9Rect);
-		//sensorRects.add(baroRect);
+		sensorRects.add(baroRect);
 		sensorRects.add(lightRect);
 		sensorRects.add(thermRect);
-		//sensorRects.add(humRect);
+		sensorRects.add(humRect);
 		sensorRects.add(distRect);
 	}
 	
